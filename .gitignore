@@ -1,0 +1,11 @@
+node_modules/
+package-lock.json
+.cache/
+.parcel-cache/
+dist/
+lib/
+# Logs
+logs/
+*.log
+npm-debug.log*
+parcel-bundle-reports/

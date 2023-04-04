@@ -1,0 +1,192 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pablo's Viewww</title>
+        <link rel="stylesheet" href="assets/tailwind/tailwind.css">
+  </head>
+
+  <body class="relative">
+        <nav class="fixed z-[9999] top-0 left-0 w-full text-white h-20 px-10">
+            <ul class="flex w-full h-full items-center justify-between">
+                <li class="logo mix-blend-difference font-2xl uppercase"><a href="/">pablo's viewww</a></li>
+
+                <div class="">
+                    <li class="underlined mr-10 font-2xl" ><a href="#about">about</a></li>
+                    <li class="underlined font-2xl" ><a href="#parallax">features</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="noise pt-40" id="about">
+            <div class="container py-10">
+                <div data-component="text-reveal">
+                    <h1  data-text-reveal--text class="mb-20">pablo's viewww</h1>
+
+                    <h2 
+                        class="mb-10"
+                        data-text-reveal--text         
+                    >
+                        about.
+                    </h2>
+                </div>
+    
+                <div class="w-2/3" data-component="text-reveal">
+                    <p data-text-reveal--text>
+                        As a newly minted web developer, I bring a fresh perspective and a range of technical skills to the table. I have a particular passion for web animations, and I love finding creative ways to bring websites to life through engaging visuals that capture the user's attention. Whether it's through subtle hover effects or full-blown animated sequences, I believe that animations can take a website to the next level.
+                    </p>
+    
+                    <p class="mt-10" data-text-reveal--text>
+                        In addition to my web development work, I am also an accomplished musician. I enjoy creating my own compositions and experimenting with different genres and styles. I find that my musical background gives me a unique perspective on web design, and I am always looking for ways to incorporate my passion for music into my work.
+                    </p>
+    
+                    <p class="mt-10" data-text-reveal--text>
+                        Overall, I am a highly motivated and creative individual with a strong work ethic and a commitment to staying up-to-date with the latest technologies. I am excited to continue growing as a web developer and to bring my skills and expertise to new projects and collaborations.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="noise py-20 overflow-hidden">
+            <div 
+                class="flex justify-center pb-20"
+                data-component="vertical-scroll"
+                data-vertical-scroll--direction="left"
+            >
+                <ul
+                    class="flex justify-center items-center will-change-transform transform-gpu" 
+                    data-vertical-scroll--list
+                >
+                    <li class="pl-20 w-72">
+                        <a href="/a">
+                            <img 
+                                class="w-full h-auto object-cover object-center" 
+                                src="assets/images/svg1.svg"
+                            >
+                        </a>
+                    </li>
+
+                    <li class="pl-20 w-72">
+                        <a href="/ab">
+                            <img 
+                                class="w-full h-auto object-cover object-center" 
+                                src="assets/images/svg2.svg"
+                            >
+                        </a>
+                    </li>
+
+                    <li class="pl-20 w-72">
+                        <a href="/ba">
+                            <img 
+                                class="w-full h-auto object-cover object-center" 
+                                src="assets/images/svg4.svg"
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div 
+            class="flex justify-center"
+            data-component="vertical-scroll"
+            data-vertical-scroll--direction="right"
+            >
+                <ul 
+                    class="flex justify-center items-center will-change-transform transform-gpu" 
+                    data-vertical-scroll--list
+                >
+                    <li class="pl-20 w-72">
+                        <a href="/a">
+                            <img 
+                                class="w-full h-auto object-cover object-center" 
+                                src="assets/images/svg1.svg"
+                            >
+                        </a>
+                    </li>
+
+                    <li class="pl-20 w-72">
+                        <a href="/ab">
+                            <img 
+                                class="w-full h-auto object-cover object-center" 
+                                src="assets/images/svg2.svg"
+                            >
+                        </a>
+                    </li>
+
+                    <li class="pl-20 w-72">
+                        <a href="/ba">
+                            <img 
+                                class="w-full h-auto object-cover object-center" 
+                                src="assets/images/svg4.svg"
+                            >
+                        </a>
+                    </li>
+                </ul>
+                </div>
+        </div>
+
+        <div class="noise blue-gradient | bg-gray-500 h-[100vh] grid-12 py-20" id="parallax">
+            <div
+                class="col-start-1 col-end-13 relative md:col-start-4 md:col-end-10"
+                data-component="parallax"
+            >
+                <div
+                    class="will-change-transform transform-gpu w-1/2 min-w-[180px] max-w-[200px] aspect-11/9 absolute top-36 rounded-lg overflow-hidden md:max-w-full md:top-20 md:-left-20 lg:max-w-[220px] lg:top-80 lg:left-0 xl:top-40 xl:left-10"
+                    data-parallax--child
+                >
+                    <img 
+                        class="w-full h-full object-cover"
+                        src="assets/images/img-1.jpg"
+                    >
+                </div>
+
+                <div
+                    class="will-change-transform transform-gpu w-3/5 min-w-[200px] max-w-[250px] aspect-square absolute -top-4 right-0 rounded-lg overflow-hidden md:max-w-full md:-right-8 lg:max-w-[300px] lg:top-10 xl:-top-8 xl:-right-20 2xl:-right-10"
+                    data-parallax--child
+                >
+                    <img 
+                            class="w-full h-full object-cover"
+                            src="assets/images/img-2.jpg"
+                    >
+                </div>
+
+                <div
+                    class="will-change-transform transform-gpu w-2/3 min-w-[220px] max-w-[280px] aspect-vertical-rectange absolute bottom-0 right-12 rounded-md overflow-hidden md:max-w-full md:right-8 lg:max-w-[360px] lg:bottom-10 xl:bottom-0 lg:right-0 xl:right-10"
+                    data-parallax--child
+                >
+                    <img 
+                        class="w-full h-full object-cover"
+                        src="assets/images/img-3.jpg"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-darkBlue blue h-[80vh] text-white">
+            <div class="container py-10">
+                <div class="w-2/3" data-component="text-reveal">
+                    <h2 
+                        class="mb-10"
+                        data-text-reveal--text
+                    >
+                        The Magic of Web Animations: Why I Can't Get Enough of Them
+                    </h2>
+                </div>
+    
+                <div class="w-2/3" data-component="text-reveal">
+                    <p class="mb-10" data-text-reveal--text>
+                        Web animations have transformed the way we experience the web, bringing a new level of interactivity and engagement to online content. As a lover of web animations, I am constantly amazed by the power of these visual storytelling tools. Whether it's a subtle hover effect or a complex 3D animation, web animations have the ability to captivate and communicate information in ways that static images simply cannot. I find that web animations add a sense of personality and playfulness to websites, making them more memorable and enjoyable to explore. In addition, web animations can be used to guide users through a website or draw attention to important content, enhancing the user experience and improving the overall usability of a site.
+                    </p>
+        
+                    <p data-text-reveal--text>
+                        Another reason why I love web animations is their versatility. From SVG animations to CSS animations, there are a plethora of tools and techniques available for creating web animations. This allows for endless creativity and experimentation, as designers and developers can use different animation techniques to bring their ideas to life. Additionally, web animations can be used in a variety of contexts, from marketing and advertising to educational resources and storytelling. By combining animations with other web technologies such as video, audio, and interactive elements, the possibilities for creating dynamic and engaging online content are endless. Overall, I am constantly inspired and impressed by the creative potential of web animations, and I look forward to seeing how they continue to evolve and shape the web in the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>

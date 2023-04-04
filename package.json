@@ -1,0 +1,32 @@
+{
+  "name": "research",
+  "version": "1.0.0",
+  "description": "Pablo's Lab",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:start": "parcel serve src/index.html",
+    "watch:css": "tailwindcss -i src/style.css -o src/assets/tailwind/tailwind.css -w",
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.4.21",
+    "posthtml-include": "^1.7.4",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^5.1.15",
+    "gsap": "^3.11.5",
+    "split-type": "^0.3.3",
+    "tailwind": "^4.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
